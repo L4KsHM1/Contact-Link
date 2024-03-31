@@ -6,6 +6,10 @@ export default function Create(){
     const [email,setEmail] = useState('');
 
     const handleSubmit = () =>{
+        if(!name || !phone ){
+            alert("please fillout the field");
+            return;
+        }
         axios.post('http://localhost:3001/add',{name,phone,email})
         .then(result=>{
             // setName('');
@@ -24,8 +28,8 @@ export default function Create(){
     return (
         <>
         <div className="create_form">
-            <input type="text" placeholder="Name" onChange={(e)=> setName(e.target.value)} />
-            <input type="number" placeholder="Phone" onChange={(e)=> setPhone(e.target.value)}/>
+            <input type="text" placeholder="Name"  onChange={(e)=> setName(e.target.value)} required/>
+            <input type="number" placeholder="Phone" onChange={(e)=> setPhone(e.target.value)} required/>
             <input type="email" placeholder="Email" onChange={(e)=> setEmail(e.target.value)} />
             </div>
 
