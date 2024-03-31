@@ -6,11 +6,19 @@ export default function Create(){
     const [email,setEmail] = useState('');
 
     const handleSubmit = () =>{
-        axios.post('http://localhost:3001/add',{name,phone,email});
-        setName('');
-        setPhone('');
-        setEmail('');
-        alert("Contact saved successfully");
+        axios.post('http://localhost:3001/add',{name,phone,email})
+        .then(result=>{
+            // setName('');
+            // setPhone('');
+            // setEmail('');
+            location.reload()
+            alert("Contact saved successfully");
+        })
+        .catch(error => {
+            console.error('Error saving contact:', error);
+            alert("Failed to save contact. Please try again.");
+        });
+        
     }
 
     return (
