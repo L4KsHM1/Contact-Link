@@ -30,7 +30,7 @@ export default function Create(){
             </div>
 
         <div className="btn">
-              <button onClick={handleSubmit}><b>Save</b></button>
+              <button onClick={handleSubmit}><b>ADD</b></button>
               {/* <button onClick={handleView}><b>View</b></button> */}
         </div>
 </>

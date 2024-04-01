@@ -12,15 +12,18 @@ export default function Home(){
 
 return(
     <div className="home">
-      <h1>Contact Link</h1> 
+      <h1>Contact manager</h1> 
       <Create/>   
       <div>
          <h2>Contacts</h2>
          {contacts.map((contact,index)=>(
            <div key = {index} className="contact">
-            <p><b>{contact.name}</b></p>
-            <p><b>{contact.phone}</b></p>
-            <p><b>{contact.email}</b></p>
+            <img src="icons8-person-30.png" alt="" />
+            <div>
+                <div><b>{contact.name}</b></div>
+                <div>{contact.phone}</div>
+                <div>{contact.email}</div>
+            </div>
            </div>
     ))}
       </div>

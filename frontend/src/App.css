@@ -8,6 +8,7 @@ body{
 }
 .create_form{
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 .create_form input{
@@ -31,4 +32,11 @@ body{
 .btn button:hover{
   background-color: rgb(16, 139, 16);
   border: solid rgb(16, 139, 16);
+}
+.contact{
+  width: 345px;
+  background-color: rgb(181, 163, 177);
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
 }
