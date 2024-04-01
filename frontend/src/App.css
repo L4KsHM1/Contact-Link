@@ -33,10 +33,17 @@ body{
   background-color: rgb(16, 139, 16);
   border: solid rgb(16, 139, 16);
 }
-.contact{
+.content{
   width: 345px;
+  height: 90px;
   background-color: rgb(181, 163, 177);
   border-radius: 1rem;
   align-items: center;
   display: flex;
+  border: solid 1px;
+  margin-bottom: 15px;
+}
+.content img{
+  margin-right: 1rem;
+  margin-left: 10px;
 }

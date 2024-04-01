@@ -17,13 +17,13 @@ return(
       <div>
          <h2>Contacts</h2>
          {contacts.map((contact,index)=>(
-           <div key = {index} className="contact">
-            <img src="icons8-person-30.png" alt="" />
-            <div>
+           <div key = {index} className="content">
+             <img src="icons8-person-30.png" alt="" />
+              <div>
                 <div><b>{contact.name}</b></div>
                 <div>{contact.phone}</div>
                 <div>{contact.email}</div>
-            </div>
+               </div>
            </div>
     ))}
       </div>
