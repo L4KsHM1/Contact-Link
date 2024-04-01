@@ -9,6 +9,13 @@ app.use(express.json())
 
 mongoose.connect('mongodb://localhost:27017/test')
 
+app.get('/get',(req,res)=>{
+    ContactModel.find()
+    .then(result => res.json(result))
+    .catch(err => res.json(err));
+    
+});
+
 app.post('/add',(req,res)=>{
     const {name,phone,email} = req.body;
     ContactModel.create({
