@@ -8,7 +8,15 @@ export default function Home(){
         axios.get('http://localhost:3001/get')
         .then(result => setContacts(result.data))
         .catch(err => console.log(err))
-    },[]);
+    },[])
+
+    const handleDelete = (id) =>{
+        axios.delete('http://localhost:3001/delete/'+id)
+        .then(result => {
+            location.reload()
+        })
+        .catch(err => console.log(err))
+    }
 
 return(
     <div className="home">
@@ -23,6 +31,10 @@ return(
                 <div><b>{contact.name}</b></div>
                 <div>{contact.phone}</div>
                 <div>{contact.email}</div>
+               </div>
+               <div className="update-btn">
+                <button className="edit">Edit</button>
+                <button className="dlt" onClick={() => handleDelete(contact._id)}>Delete</button>
                </div>
            </div>
     ))}

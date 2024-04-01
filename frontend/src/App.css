@@ -33,7 +33,7 @@ body{
   background-color: rgb(16, 139, 16);
   border: solid rgb(16, 139, 16);
 }
-.content{
+.content {
   width: 345px;
   height: 90px;
   background-color: rgb(181, 163, 177);
@@ -46,4 +46,26 @@ body{
 .content img{
   margin-right: 1rem;
   margin-left: 10px;
+}
+.update-btn{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 1rem;
+  
+}
+.update-btn button {
+  height: 30px;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 5px;
+  cursor:pointer;
+}
+.update-btn button.edit:hover{
+  background-color:rgb(27, 27, 231) ;
+  border: none;
+}
+.update-btn button.dlt:hover{
+  background-color:rgb(246, 23, 23) ;
+  border: none;
 }
