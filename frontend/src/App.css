@@ -1,5 +1,6 @@
 body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9a200;
 }
 .home{
   display: flex;
@@ -15,8 +16,7 @@ body{
   width: 300px;
   height: 1.5rem;
   padding: 10px;
-  border: 2px solid ;
-  outline: none;
+  border:  none ;
   border-radius: 1rem;
   margin-bottom: .5rem;
 }
@@ -26,7 +26,7 @@ body{
   margin-right: 10px;
   margin-top: 15px;
   border-radius: 1rem;
-  border:solid  ;
+  border:none  ;
   cursor:pointer;
 }
 .btn button:hover{
@@ -36,12 +36,13 @@ body{
 .content {
   width: 345px;
   height: 90px;
-  background-color: rgb(181, 163, 177);
+  /* background-color: rgb(134, 134, 52); */
+  background-color: #025c37;
   border-radius: 1rem;
   align-items: center;
   display: flex;
-  border: solid 1px;
   margin-bottom: 15px;
+  color: rgb(250, 248, 246);
 }
 .content img{
   margin-right: 1rem;
@@ -62,10 +63,17 @@ body{
   cursor:pointer;
 }
 .update-btn button.edit:hover{
-  background-color:rgb(27, 27, 231) ;
+  background-color:rgb(70, 70, 216) ;
   border: none;
 }
 .update-btn button.dlt:hover{
   background-color:rgb(246, 23, 23) ;
   border: none;
 }
+h1{
+  background-color: rgb(51, 51, 94);
+  border-radius: 1rem;
+  padding: 0 2rem .5rem 2rem;
+  color: white;
+}
+  
